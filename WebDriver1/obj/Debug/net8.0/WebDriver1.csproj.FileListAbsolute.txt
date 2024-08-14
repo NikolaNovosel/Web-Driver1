@@ -1,0 +1,15 @@
+C:\Users\DELL\source\repos\WebDriver1\WebDriver1\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+C:\Users\DELL\source\repos\WebDriver1\WebDriver1\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+C:\Users\DELL\source\repos\WebDriver1\WebDriver1\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+C:\Users\DELL\source\repos\WebDriver1\WebDriver1\bin\Debug\net8.0\WebDriver1.deps.json
+C:\Users\DELL\source\repos\WebDriver1\WebDriver1\bin\Debug\net8.0\WebDriver1.dll
+C:\Users\DELL\source\repos\WebDriver1\WebDriver1\bin\Debug\net8.0\WebDriver1.pdb
+C:\Users\DELL\source\repos\WebDriver1\WebDriver1\obj\Debug\net8.0\WebDriver1.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\WebDriver1\WebDriver1\obj\Debug\net8.0\WebDriver1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\source\repos\WebDriver1\WebDriver1\obj\Debug\net8.0\WebDriver1.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\WebDriver1\WebDriver1\obj\Debug\net8.0\WebDriver1.AssemblyInfo.cs
+C:\Users\DELL\source\repos\WebDriver1\WebDriver1\obj\Debug\net8.0\WebDriver1.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\WebDriver1\WebDriver1\obj\Debug\net8.0\WebDriver1.dll
+C:\Users\DELL\source\repos\WebDriver1\WebDriver1\obj\Debug\net8.0\refint\WebDriver1.dll
+C:\Users\DELL\source\repos\WebDriver1\WebDriver1\obj\Debug\net8.0\WebDriver1.pdb
+C:\Users\DELL\source\repos\WebDriver1\WebDriver1\obj\Debug\net8.0\ref\WebDriver1.dll
