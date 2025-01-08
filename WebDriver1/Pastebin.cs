@@ -5,33 +5,31 @@ namespace WebDriver1;
 public class Pastebin
 {
     private readonly IWebDriver _driver;
-
     public Pastebin(IWebDriver driver)
     {
         _driver = driver;
     }
-
-    public IWebElement PasteTextArea => _driver.FindElement(By.Id("postform-text"));
-    public IWebElement DropDownList => _driver.FindElement(By.Id("select2-postform-expiration-container"));
-    public IWebElement TenMinutesOption => _driver.FindElement(By.XPath("//li[text()='10 Minutes']"));
-    public IWebElement PasteNameField => _driver.FindElement(By.Id("postform-name"));
-    public IWebElement CreatePasteButton => _driver.FindElement(By.XPath("//button[text()='Create New Paste']"));
-
-    public void EnterPasteText(string text)
+    private IWebElement PasteTextArea => _driver.FindElement(By.Id("postform-text"));
+    private IWebElement DropDownList => _driver.FindElement(By.Id("select2-postform-expiration-container"));
+    private IWebElement PostFormLeft => _driver.FindElement(By.ClassName("post-form__left"));
+    private IWebElement TenMinutesOption => PostFormLeft.FindElement(By.XPath("//li[text()='10 Minutes']"));
+    private IWebElement PasteNameField => _driver.FindElement(By.Id("postform-name"));
+    private IWebElement CreatePasteButton => PostFormLeft.FindElement(By.XPath("//button[text()='Create New Paste']"));
+    public string EnterAndReturnPasteText(string text)
     {
         PasteTextArea.SendKeys(text);
+        return PasteTextArea.GetAttribute("value");
     }
-    public void SetExpirationToTenMinutes()
+    public string SetAndReturnExpirationToTenMinutes()
     {
         DropDownList.Click();
         TenMinutesOption.Click();
+        return DropDownList.Text;
     }
-    public void EnterPasteName(string name)
+    public string EnterAndReturnPasteName(string name)
     {
-        PasteTextArea.SendKeys(name);
+        PasteNameField.SendKeys(name);
+        return PasteNameField.GetAttribute("value");
     }
-    public void CreatePaste()
-    {
-        CreatePasteButton.Click();
-    }
+    public void CreatePaste() => CreatePasteButton.Click();
 }
